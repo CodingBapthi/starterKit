@@ -1,31 +1,33 @@
 {
   "extends": "astro/tsconfigs/base",
   "compilerOptions": {
-      "baseUrl": "src",
-      "paths": {
-        "@lib/*": [
-          "lib/*"
-        ],
-        "@utils/*": [
-          "utils/*"
-        ],
-        "@components/*": [
-          "components/*"
-        ],
-        "@layouts/*": [
-          "layouts/*"
-        ],
-        "@assets/*": [
-          "assets/*"
-        ],
-        "@pages/*": [
-          "pages/*"
-        ]
-      },
-      "plugins": [
-        {
-          "name": "@astrojs/ts-plugin"
-        },
+    "baseUrl": "/Users/bapthi/coding/repos/bapthi/starterKit/src",
+    "paths": {
+      "@lib/*": [
+        "lib/*"
       ],
-    }
+      "@utils/*": [
+        "utils/*"
+      ],
+      "@components/*": [
+        "components/*"
+      ],
+      "@layouts/*": [
+        "layouts/*"
+      ],
+      "@assets/*": [
+        "assets/*"
+      ],
+      "@pages/*": [
+        "pages/*"
+      ]
+    },
+    "plugins": [
+      {
+        "name": "@astrojs/ts-plugin"
+      }
+    ],
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
+  }
 }
