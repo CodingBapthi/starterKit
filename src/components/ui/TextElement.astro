@@ -1,0 +1,8 @@
+---
+const { text = 'Default text', headline, styleclass } = Astro.props;
+---
+
+<section class={styleclass}>
+  <h1>{headline}</h1>
+  <p class="text-lg text-gray-800">{text}</p>
+</section>

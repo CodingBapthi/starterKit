@@ -1,0 +1,22 @@
+---
+import TextElement from '@components/ui/TextElement.astro';
+import ImageTextElement from '@components/ui/ImageTextElement.astro';
+import Contact from '@components/Contact.astro';
+import Image from '@assets/images/dummy.jpg';
+---
+
+<section>
+  <TextElement
+    text="Hier kann der text für das Text Element übergeben werden"
+  />
+  <br />
+  <ImageTextElement
+    mobileImgUrl={Image}
+    desktopImgUrl={Image}
+    alt="Dummy Image"
+    imgAligment="right"
+    text="Hier kann der text für das Image Text Element übergeben werden"
+  />
+  <br />
+  <Contact />
+</section>
