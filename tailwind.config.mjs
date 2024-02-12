@@ -2,10 +2,10 @@
 module.exports = {
   darkMode: ['class'],
   content: [
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}',
-    './app/**/*.{js,ts,jsx,tsx}',
-    './src/**/*.{js,ts,jsx,tsx}',
+    './pages/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}',
+    './components/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}',
+    './app/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}',
+    './src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}',
   ],
   prefix: '',
   theme: {
@@ -13,11 +13,19 @@ module.exports = {
       center: true,
       padding: '2rem',
       screens: {
-        '2xl': '1400px',
+        xs: '480px',
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1280px',
       },
     },
     extend: {
       colors: {
+        black: '#000000',
+        white: '#ffffff',
+        orange: '#E06330',
+        green: '#2E7D32',
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
@@ -51,6 +59,27 @@ module.exports = {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
+      },
+      fontFamily: {
+        // Headings
+        sans: ['Inter', 'sans-serif'],
+        // Base text
+        monospace: ['Inconsolata', 'monospace'],
+      },
+      fontSize: {
+        xs: '.75rem',
+        sm: '.875rem',
+        tiny: '.875rem',
+        base: '1rem',
+        lg: '1.125rem',
+        xl: '1.25rem',
+        '2xl': '1.5rem',
+        '3xl': '1.875rem',
+        '4xl': '2.25rem',
+        '5xl': '3rem',
+      },
+      letterSpacing: {
+        wide: '.025em',
       },
       borderRadius: {
         lg: 'var(--radius)',
