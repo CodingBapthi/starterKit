@@ -7,7 +7,10 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "biome": "npx @biomejs/biome format ./src/* && npx @biomejs/biome lint ./src/*",
+    "format": "npx @biomejs/biome format ./src",
+    "lint": "npx @biomejs/biome lint ./src"
   },
   "dependencies": {
     "@astrojs/check": "^0.4.1",
